@@ -1,0 +1,42 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-specific binaries
+/bin/
+/dist/
+
+# Dependency directories
+/vendor/
+/go.sum
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.a
+
+# Ignore the local config file for `liteide`
+.idea/
+
+# Ignore the build folder
+/build/
+
+# Ignore any logs or temporary files
+/log/
+/tmp/
+
+# Ignore the Go binary file
+*.go~
+
+# Ignore any OS-generated files
+.DS_Store
+Thumbs.db
+.env
