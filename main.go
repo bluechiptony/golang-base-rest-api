@@ -9,18 +9,10 @@ import (
 
 func main(){
 	port := 8084
-
-	// fmt.Printf("Service is running on port :%d ...\n", port)
-
-	// http.HandleFunc("/api/startup/test", helloHandler)
-	// log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
-
-
 	app := gin.Default()
 	app.GET("/api/startup/test", welcomeHandler)
 	app.Run(fmt.Sprintf(":%d", port))
-	// log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), app))
-	// app.Run()
+	
 
 }
 
